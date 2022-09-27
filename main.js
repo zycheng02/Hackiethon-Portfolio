@@ -5,6 +5,13 @@ var $modals = getAll('.modal');
 var $modalTriggers = getAll('.modal-trigger');
 var $modalCloses = getAll('.modal-card-head .delete, .modal-card-foot .button');
 
+
+console.log($modals);
+
+console.log($modalTriggers);
+
+console.log($modalCloses);
+
 if ($modalTriggers.length > 0) {
     $modalTriggers.forEach(function ($el) {
         $el.addEventListener('click', function () {

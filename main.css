@@ -13,7 +13,7 @@ h1 {
 
 /* screen seperation for sections */
 .screenSep{
-
+  min-height: 100vh;
   padding: 2.15rem 1.5rem;
 }
 .jumbotron {

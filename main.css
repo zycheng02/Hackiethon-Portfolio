@@ -8,12 +8,36 @@ body {
 
 h1 {
     text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 2.5rem;
+    color: #000000;
 }
+
+h2 {
+  text-align: left; 
+  font-family: 'Syne';
+  font-size: 2rem;
+  color: #000000;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Syne'; 
+  font-size: 2rem;
+}
+
+h4 {
+  text-align: left; 
+  font-family: 'Syne';
+  font-size: 1.5rem; 
+}
+
+
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 /* screen seperation for sections */
 .screenSep{
-  height: 100vh;
+
   padding: 2.15rem 1.5rem;
 }
 .jumbotron {
@@ -71,7 +95,7 @@ a.icon > strong {
   width: 100%;
 }
 
-.member-general-info .name-picture {
+.member-general-info .member-avatars {
   width: 25%;
   padding: 1rem;
 }
@@ -214,21 +238,21 @@ a.icon > strong {
     to {bottom: 0; opacity: 0;}
   }
 
-  .contact-form .name {
+  .contact-form .form-name {
     display: flex;
     flex-direction: column;
   }
 
-  .name {
+  .form-name {
     display: flex;
     flex-direction: row;
   }
 
-  .name .first-name {
+  .form-name .first-name {
     width: 50%;
   }
 
-  .name .last-name {
+  .form-name .last-name {
     width: 50%;
   }
 
@@ -253,7 +277,7 @@ a.icon > strong {
     width: 100%;
   }
 
-  .name {
+  .form-name {
     flex-direction: column;
   }
 }

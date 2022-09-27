@@ -8,6 +8,7 @@
     <link href="PLUGINS/bootstrap.css" rel="stylesheet">
     <!-- Bulma style for modal -->
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@500&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
     <title>Winners Portfolio Home</title>
@@ -23,6 +24,7 @@
   <!-- Person selection
     redirects to introduction down the page
   -->
+  <a name="index"></a>
   <section class="screenSep">
     <div class="container">
       <h2 class="title">CHOOSE YOUR MEMBER</h2>
@@ -34,7 +36,7 @@
             <div class="tile is-parent">
               
               <article class="tile is-child notification">
-                <p class="title">David</p>
+                <h3>David</h3>
                 <figure class="image">
                   
                     <a href="#name1"> <img src="src/img1.png" alt="descriptivetext" /> </a>
@@ -45,7 +47,7 @@
 
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <h3>Piya</h3>
                 <figure class="image">
                   <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
                 </figure>
@@ -55,7 +57,7 @@
             <div class="tile is-parent">
               
               <article class="tile is-child notification">
-                <p class="title">David</p>
+                <h3>Jacqui</h3>
                 <figure class="image">
                   <span>
                     <a href="#name1"> <img src="picture.jpg" alt="descriptivetext" /> </a>
@@ -66,7 +68,7 @@
 
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <h3>Neev</h3>
                 <figure class="image">
                   <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
                 </figure>
@@ -74,15 +76,8 @@
             </div>
 
           </div>
-
-          <div class="tile">
-
-
-
-          </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
     
@@ -90,21 +85,19 @@
 
   <!-- person 1 anchor -->
   <a class="anchor" name="name1"></a>
-    <div class="jumbotron">
+    <div class="screenSep">
       
-          <!-- members general info to go into each modal -->
+    <div class="name"> 
+      <h2 class="title">TEAM MEMBER NAME</h2>
+    </div>
+
+    <!-- members general info to go into each modal -->
     <section class="member-general-info">
 
-      <!-- NAME AND PICTURE -->
-      <div class="name-picture">
-          <h2>
-              <span>TEAM MEMBER NAME</span>
-          </h2>
-          
-          <div class="member-avatars">
-              <img src="#" alt="member name avatar">
-          </div>
-      </div>
+      <!-- PICTURE -->
+        <div class="member-avatars">
+            <img src="#" alt="member name avatar">
+        </div>
       
       <!-- SKILL BAR CODE 
       sourced from https://hovahyii.github.io/portfolio-v2/index.html#about
@@ -163,20 +156,22 @@
             </p>
         </div>
 
+        <br>
+        <br>
+
         <div class="lifestyle">
-          <h4>Lifestyle</h4>
+          <h4>LIFESTYLE</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
           labore et dolore</p>
         </div>
       </div>
-  </section>
+    </section>
   
-  <!-- members further info to go into module -->
+    <!-- members further info to go into module -->
     <section class="member-more-details">
       <!-- more about member -->
       <div class="about-member">
           <h4>ABOUT</h4>
-          <br>
           <div class="about-text">
               <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar sagittis tortor at tincidunt. 
@@ -189,6 +184,7 @@
               </p>
           </div>
       </div>
+    </section>
 
     <!-- person 1 project -->
     <section class="peopleInfo" >
@@ -223,13 +219,30 @@
       </div>
     </section>
 
+      <!-- return to index screen  -->
+      <nav class="peopleInfo" role="navigation" aria-label="main navigation">
+
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a href="#index" class="icon is-large has-text-light">
+                return to navigation
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
   <!-- contact form below -->
   <div class="screenSep">
     <h4 class="title">Contact Us!</h4>
     <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
     <form target="dummyframe" id="profileform" action="https://formspree.io/f/xaykolry" method="POST">
 
-      <div class="name">
+      <div class="form-name">
         <div class="first-name">
           <label class="field is-horizontal">First Name</label>
           <input type="text" name="firstName" placeholder="First Name">

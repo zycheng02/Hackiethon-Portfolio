@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+.character{
+    padding: 40px;
+}
+
 body .wrapper {
     z-index: 2;
     visibility: hidden;

@@ -1,70 +1,9 @@
-html {
-  display: block;
-}
-
-body {
-  margin: 2%;
-}
-
 h1 {
-  text-align: center;
-  font-family: 'Press Start 2P';
-  font-size: 2.5rem;
-  color: #000000;
+    text-align: center;
 }
 
-h2 {
-  text-align: left; 
-  font-family: 'Syne';
-  font-size: 2rem;
-  color: #000000;
-}
-
-h3 {
-  text-align: center;
-  font-family: 'Press Start 2P'; 
-  font-size: 1.5rem;
-  color: #000000;
-}
-
-h4 {
-  text-align: left; 
-  font-family: 'Syne';
-  font-size: 1.75rem; 
-}
-
-h5 {
-  text-align: left; 
-  font-family: 'Syne';
-  font-size: 1.25rem; 
-}
-
-p, a {
-  text-align: left; 
-  font-family: 'Syne'; 
-  font-size: 1.25rem; 
-}
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-
-/* screen seperation for sections */
-.screenSep{
-  min-height: 100vh;
-  padding: 2.15rem 1.5rem;
-}
-.jumbotron {
-  height: 100vh; /*height to 100% of view height*/
-  background: #31b0d5; /*background color to blue*/
-  margin-bottom: 0; /*no bottom margin*/
-
-  display: flex;
-  flex-direction: column;
-}
-.peopleInfo{
-  height: auto;
-  background: #31b0d5;
-  display: flex;
-  flex-direction: column;
-  padding: 2.15rem 1.5rem;
+.character{
+    padding: 40px;
 }
 
 body .wrapper {
@@ -98,197 +37,76 @@ a.icon > strong {
     width: 100%
 }
 
-/* member general info specific modals content */
-.member-general-info {
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.member-general-info .member-avatars {
-  width: 25%;
-  padding: 1rem;
-}
-
-.member-general-info .skill-bars {
-  width: 40%;
-  padding: 1rem;
-}
-
-.member-general-info .hobbies-lifestyle {
-  width: 35%;
-  padding: 1rem;
-}
-
 /*== SKILL BAR ==*/
 .skill {
-  margin: 0;
-}
-.skill .box {
-  text-align: center;
-  border: 1px solid transparent;
-  padding-bottom: 30px;
-}
-.skill.top .box {
-  padding-top: 50px;
-}
-.skill.bottom .box {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-@media (max-width: 768px) {
+    margin: 0;
+  }
   .skill .box {
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
-    border: 0 !important;
+    text-align: center;
+    border: 1px solid transparent;
+    padding-bottom: 30px;
   }
-}
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 110px;
-  height: 110px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.chart .percent {
-  color: #000000;
-  display: inline-block;
-  line-height: 110px;
-  z-index: 2;
-}
-.chart .percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .8em;
-}
-.title-border {
-  text-align: center;
-  padding: 30px;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-}
-/* space between skill row */
-.list-progress li {
-  padding: 10px 0;
-}
-.list-progress li .title {
-  margin-bottom: 10px;
-}
-.list-progress li .progress-line {
-  background: #fafafa;
-  border: 1px solid #ebebeb;
-  padding: 5px;
-}
-.list-progress li .progress-line .line {
-  /* thickness of skill bar */
-  height: 15px;
-  background: black;
-  display: block;
-  width: 0;
-}
-
-.member-more-details .about-member .about-text {
-  column-count: 2; 
-} 
-
-/* contact form css (note: copied from https://www.w3schools.com/howto/howto_js_snackbar.asp ) */
-
-#snackbar {
-    visibility: hidden;
-    min-width: 200px;
-    margin-left: -125px;
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    text-align: center; 
-    border-radius: 2px; /* could change */
+  .skill.top .box {
     padding-top: 50px;
-    padding-right: 30px;
+  }
+  .skill.bottom .box {
+    padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 80px;
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
   }
-  
-  /* Show the snackbar when clicking on a button (class added with JavaScript) */
-  #snackbar.show {
-    visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  @media (max-width: 768px) {
+    .skill .box {
+      padding-bottom: 30px !important;
+      padding-top: 30px !important;
+      border: 0 !important;
+    }
   }
-  
-  /* Animations to fade the snackbar in and out */
-  @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+  .chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
   }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+  .chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+  .chart .percent {
+    color: #000000;
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
   }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+  .chart .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
   }
-
-  .contact-form .form-name {
-    display: flex;
-    flex-direction: column;
+  .title-border {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
-
-  .form-name {
-    display: flex;
-    flex-direction: row;
+  /* space between skill row */
+  .list-progress li {
+    padding: 10px 0;
   }
-
-  .form-name .first-name {
-    width: 50%;
+  .list-progress li .title {
+    margin-bottom: 10px;
   }
-
-  .form-name .last-name {
-    width: 50%;
+  .list-progress li .progress-line {
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 5px;
   }
-
-@media screen and (max-width: 1024px) {
-  .member-more-details .about-member .about-text {
-    column-count: 1; 
-  } 
-
-  .member-general-info {
-    flex-direction: column;
-  }  
-
-  .member-general-info .name-picture {
-    width: 100%;
+  .list-progress li .progress-line .line {
+    /* thickness of skill bar */
+    height: 15px;
+    background: black;
+    display: block;
+    width: 0;
   }
-  
-  .member-general-info .skill-bars {
-    width: 100%;
-  }
-  
-  .member-general-info .hobbies-lifestyle {
-    width: 100%;
-  }
-
-  .form-name {
-    flex-direction: column;
-  }
-}

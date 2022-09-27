@@ -215,3 +215,42 @@ a.icon > strong {
     display: flex;
     flex-direction: column;
   }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name .first-name {
+    width: 50%;
+  }
+
+  .name .last-name {
+    width: 50%;
+  }
+
+@media screen and (max-width: 1024px) {
+  .member-more-details .about-member .about-text {
+    column-count: 1; 
+  } 
+
+  .member-general-info {
+    flex-direction: column;
+  }  
+
+  .member-general-info .name-picture {
+    width: 100%;
+  }
+  
+  .member-general-info .skill-bars {
+    width: 100%;
+  }
+  
+  .member-general-info .hobbies-lifestyle {
+    width: 100%;
+  }
+
+  .name {
+    flex-direction: column;
+  }
+}

@@ -222,9 +222,6 @@
         </div>
       </div>
     </section>
-  
-
-
 
   <!-- contact form below -->
   <div class="screenSep">
@@ -233,28 +230,37 @@
     <form target="dummyframe" id="profileform" action="https://formspree.io/f/xaykolry" method="POST">
 
       <div class="name">
-        <label class="field is-horizontal">First Name</label>
-        <input type="text" name="firstName" placeholder="First Name">
+        <div class="first-name">
+          <label class="field is-horizontal">First Name</label>
+          <input type="text" name="firstName" placeholder="First Name">
+          <br>
+        </div>
 
-        <label class="field is-horizontal">Last Name</label>
-        <input type="text" name="lastName" placeholder="Last Name"><br><br>
+        <div class="last-name">
+          <label class="field is-horizontal">Last Name</label>
+          <input type="text" name="lastName" placeholder="Last Name">
+          <br>
+        </div>
       </div>
 
       <div class="email">
         <label class="field is-horizontal">Email</label>
-        <input class="input" type="text" name="email" placeholder="Email"><br><br>
+        <input class="input" type="text" name="email" placeholder="Email">
+        <br>
       </div>
 
       <div class="query">
         <label class="field is-horizontal">Subject</label>
-        <input class="input" type="text" name="subject" placeholder="Subject"><br>
+        <input class="input" type="text" name="subject" placeholder="Subject">
+        <br>
 
         <label class="field is-horizontal">Question</label>
-        <input class="textarea" type="text" name="message" placeholder="Question"><br><br> 
+        <input class="textarea" type="text" name="message" placeholder="Question">
+        <br>
       </div>
 
-      <label class="field is-horizontal">Opt In<small>to join our adventures</small></label>
-      <input class="input" type="checkbox" name="_optin"><br><br>
+      <label class="field is-horizontal">Opt in to join our adventures</small></label>
+      <input class="input" type="checkbox" name="_optin" placeholder="Email"><br>
 
       <!-- Use a button to open the snackbar used this link: https://www.w3schools.com/howto/howto_js_snackbar.asp -->
       <input type="button" onclick="myFunction()">Send</button>

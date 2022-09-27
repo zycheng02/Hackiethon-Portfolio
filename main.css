@@ -1,9 +1,21 @@
+html {
+  display: block;
+}
+
+body {
+  margin: 2%;
+}
+
 h1 {
     text-align: center;
 }
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 /* screen seperation for sections */
+.screenSep{
+  height: 100vh;
+  padding: 2.15rem 1.5rem;
+}
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
   background: #31b0d5; /*background color to blue*/
@@ -11,6 +23,13 @@ h1 {
 
   display: flex;
   flex-direction: column;
+}
+.peopleInfo{
+  height: auto;
+  background: #31b0d5;
+  display: flex;
+  flex-direction: column;
+  padding: 2.15rem 1.5rem;
 }
 
 body .wrapper {
@@ -69,82 +88,82 @@ a.icon > strong {
 
 /*== SKILL BAR ==*/
 .skill {
-    margin: 0;
-  }
+  margin: 0;
+}
+.skill .box {
+  text-align: center;
+  border: 1px solid transparent;
+  padding-bottom: 30px;
+}
+.skill.top .box {
+  padding-top: 50px;
+}
+.skill.bottom .box {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
   .skill .box {
-    text-align: center;
-    border: 1px solid transparent;
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+    border: 0 !important;
   }
-  .skill.top .box {
-    padding-top: 50px;
-  }
-  .skill.bottom .box {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  @media (max-width: 768px) {
-    .skill .box {
-      padding-bottom: 30px !important;
-      padding-top: 30px !important;
-      border: 0 !important;
-    }
-  }
-  .chart {
-    position: relative;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .chart .percent {
-    color: #000000;
-    display: inline-block;
-    line-height: 110px;
-    z-index: 2;
-  }
-  .chart .percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em;
-  }
-  .title-border {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-  }
-  /* space between skill row */
-  .list-progress li {
-    padding: 10px 0;
-  }
-  .list-progress li .title {
-    margin-bottom: 10px;
-  }
-  .list-progress li .progress-line {
-    background: #fafafa;
-    border: 1px solid #ebebeb;
-    padding: 5px;
-  }
-  .list-progress li .progress-line .line {
-    /* thickness of skill bar */
-    height: 15px;
-    background: black;
-    display: block;
-    width: 0;
-  }
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chart .percent {
+  color: #000000;
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.chart .percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.title-border {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+/* space between skill row */
+.list-progress li {
+  padding: 10px 0;
+}
+.list-progress li .title {
+  margin-bottom: 10px;
+}
+.list-progress li .progress-line {
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  padding: 5px;
+}
+.list-progress li .progress-line .line {
+  /* thickness of skill bar */
+  height: 15px;
+  background: black;
+  display: block;
+  width: 0;
+}
 
-  .member-more-details .about-member .about-text {
-    column-count: 2; 
-  }
-  
+.member-more-details .about-member .about-text {
+  column-count: 2; 
+} 
+
 /* contact form css (note: copied from https://www.w3schools.com/howto/howto_js_snackbar.asp ) */
 
 #snackbar {
@@ -195,4 +214,46 @@ a.icon > strong {
     to {bottom: 0; opacity: 0;}
   }
 
+  .contact-form .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name .first-name {
+    width: 50%;
+  }
+
+  .name .last-name {
+    width: 50%;
+  }
+
+@media screen and (max-width: 1024px) {
+  .member-more-details .about-member .about-text {
+    column-count: 1; 
+  } 
+
+  .member-general-info {
+    flex-direction: column;
+  }  
+
+  .member-general-info .name-picture {
+    width: 100%;
+  }
   
+  .member-general-info .skill-bars {
+    width: 100%;
+  }
+  
+  .member-general-info .hobbies-lifestyle {
+    width: 100%;
+  }
+
+  .name {
+    flex-direction: column;
+  }
+}

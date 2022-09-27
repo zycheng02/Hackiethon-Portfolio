@@ -51,17 +51,41 @@ p, a {
   min-height: 100vh;
   padding: 2.15rem 1.5rem;
 }
-.jumbotron {
+.jumbotron1 {
   min-height: 100vh; /*height to 100% of view height*/
-  background: #31b0d5; /*background color to blue*/
+  background: #F7F4EA; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
   flex-direction: column;
 }
+.jumbotron2 {
+  min-height: 100vh; /*height to 100% of view height*/
+  background: #DED9E2; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+.jumbotron3 {
+  min-height: 100vh; /*height to 100% of view height*/
+  background: #C0B9DD; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+.jumbotron4 {
+  min-height: 100vh; /*height to 100% of view height*/
+  background: #80A1D4; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+
 .peopleInfo{
   height: auto;
-  background: #31b0d5;
   display: flex;
   flex-direction: column;
   padding: 2.15rem 1.5rem;

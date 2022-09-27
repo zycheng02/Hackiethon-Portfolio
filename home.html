@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
     <link href="PLUGINS/bulma.css" rel="stylesheet">
     <!-- Bootstrap style for skill bar-->
     <link href="PLUGINS/bootstrap.css" rel="stylesheet">
@@ -234,29 +233,29 @@
     <form target="dummyframe" id="profileform" action="https://formspree.io/f/xaykolry" method="POST">
 
         <div class="contactinfo">
-          <label class="field is-horizontal">First Name</label>
+          <label class="field">First Name</label>
           <input type="text" name="firstName" placeholder="First Name">
 
-          <label class="field is-horizontal">Last Name</label>
+          <label class="field">Last Name</label>
           <input type="text" name="lastName" placeholder="Last Name"><br><br>
       
-          <label class="field is-horizontal">Email</label>
+          <label class="field">Email</label>
           <input class="input" type="text" name="email" placeholder="Email"><br><br>
         </div>
 
         <div class="query">
-          <label class="field is-horizontal">Subject</label>
+          <label class="field">Subject</label>
           <input class="input" type="text" name="subject" placeholder="Subject"><br>
 
-          <label class="field is-horizontal">Question</label>
+          <label class="field">Question</label>
           <input class="textarea" type="text" name="message" placeholder="Question"><br><br> 
         </div>
 
-        <label class="field is-horizontal">Opt In<small>to join our adventures</small></label>
+        <label class="field">Opt In<small> to join our adventures</small></label>
         <input class="input" type="checkbox" name="_optin"><br><br>
     
         <!-- Use a button to open the snackbar used this link: https://www.w3schools.com/howto/howto_js_snackbar.asp -->
-        <input type="button" onclick="myFunction()">Send</button>
+        <button type="button" onclick="myFunction()">Send</button>
         <!-- The actual snackbar -->
         <div id="snackbar">yayyyy sent!</div>
     </form>

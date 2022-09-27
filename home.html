@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link href="PLUGINS/bulma.css" rel="stylesheet">
     <!-- Bootstrap style for skill bar-->
     <link href="PLUGINS/bootstrap.css" rel="stylesheet">
     <!-- Bulma style for modal -->
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Winners Portfolio Home</title>
 </head>
 
@@ -19,21 +20,43 @@
     </h1>
   </header>
 
-
-  <section class="section">
+  <!-- Person selection
+    redirects to introduction down the page
+  -->
+  <section class="jumbotron">
     <div class="container">
       <h2 class="title">CHOOSE YOUR MEMBER</h2>
       <hr>
       <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
+        <div class="tile is-vertical">
           <div class="tile">
 
             <div class="tile is-parent">
               
               <article class="tile is-child notification">
                 <p class="title">David</p>
-                <figure class="image is-3by2">
+                <figure class="image">
                   
+                    <a href="#name1"> <img src="picture.jpg" alt="descriptivetext" /> </a>
+                  
+                </figure>
+              </article>
+            </div>
+
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image">
+                  <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                </figure>
+              </article>
+            </div>
+
+            <div class="tile is-parent">
+              
+              <article class="tile is-child notification">
+                <p class="title">David</p>
+                <figure class="image">
                   <span>
                     <a href="#name1"> <img src="picture.jpg" alt="descriptivetext" /> </a>
                   </span>
@@ -50,214 +73,26 @@
               </article>
             </div>
 
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image">
-                  <img alt="Project sample" class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
+          </div>
 
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image">
-                  <img alt="Project sample" class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
+          <div class="tile">
+
+
 
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
     
     
-    <!-- modals for projects/ NOT PEOPLE MODALS  -->
-  <div id="project-1-modal" class="modal">
-    <div class="modal-background"></div>
-      <div class="modal-card">
 
-        <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-
-        <section class="modal-card-body">
-  
-          <div id="project-1-modal-carousel">
-            <figure class="image">
-              <img alt="Project sample" src="img/carousel/1.png">
-            </figure>
-            <figure class="image">
-              <img alt="Project sample" src="img/carousel/2.png">
-            </figure>
-            <figure class="image">
-              <img alt="Project sample" src="img/carousel/3.png">
-            </figure>
-          </div>
-  
-          <div class="content">
-  
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat.</p>
-  
-            <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
-            </div>
-  
-          </div>
-  
-        </section>
-
-        <footer class="modal-card-foot">
-          <button class="button is-success">Close</button>
-        </footer>
-        
-      </div>
-    </div>
-
-    <div id="project-2-modal" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Project title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-
-          <section class="modal-card-body">
-    
-            <div id="project-2-modal-carousel">
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/1.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/2.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/3.png">
-              </figure>
-            </div>
-    
-            <div class="content">
-    
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat.</p>
-    
-              <div class="tags">
-                <span class="tag">angular</span>
-                <span class="tag">mongo</span>
-                <span class="tag">typscript</span>
-                <span class="tag">node</span>
-              </div>
-    
-            </div>
-    
-          </section>
-          
-          <footer class="modal-card-foot">
-            <button class="button is-success">Close</button>
-          </footer>
-        </div>
-      </div>
-    
-    <div id="project-3-modal" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Project title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-
-          <section class="modal-card-body">
-            <div id="project-3-modal-carousel">
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/1.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/2.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/3.png">
-              </figure>
-            </div>
-    
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat.</p>
-              <div class="tags">
-                <span class="tag">angular</span>
-                <span class="tag">mongo</span>
-                <span class="tag">typscript</span>
-                <span class="tag">node</span>
-              </div>
-            </div>
-    
-          </section>
-
-          <footer class="modal-card-foot">
-            <button class="button is-success">Close</button>
-          </footer>
-        </div>
-      </div>
-
-    <div id="project-4-modal" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Project title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-          <section class="modal-card-body">
-            <div id="project-4-modal-carousel">
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/1.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/2.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/3.png">
-              </figure>
-            </div>
-    
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat.</p>
-              <div class="tags">
-                <span class="tag">angular</span>
-                <span class="tag">mongo</span>
-                <span class="tag">typscript</span>
-                <span class="tag">node</span>
-              </div>
-            </div>
-          </section>
-
-          <footer class="modal-card-foot">
-            <button class="button is-success">Close</button>
-          </footer>
-        </div>
-      </div>
-    </div>
-    
-    <!-- members general info to go into each modal -->
+  <!-- person 1 anchor -->
+  <a class="anchor" name="name1"></a>
+    <div class="jumbotron">
+      
+          <!-- members general info to go into each modal -->
     <section class="member-general-info">
 
       <!-- NAME AND PICTURE -->
@@ -270,8 +105,10 @@
               <img src="#" alt="member name avatar">
           </div>
       </div>
-
-      <!-- SKILL BAR CODE -->
+      
+      <!-- SKILL BAR CODE 
+      sourced from https://hovahyii.github.io/portfolio-v2/index.html#about
+      -->
       <div class="skill-bars">
         <h4>SKILLS</h4>
           <ul class="list-unstyled list-progress">
@@ -334,12 +171,67 @@
       </div>
   </section>
     
-    <div >
-      <a class="anchor" name="name1"></a>
-        <h1>hello! </h1> 
+
+    <!-- person 1 project -->
+    <section class="section">
+      <div class="container">
+        <h2 class="title">PROJECTS</h2>
+        <hr>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title">Project title</p>
+                  <figure class="image">
+                    <img alt="Project sample" class="modal-trigger" data-target="project-1-modal" src="img/project-2-cover.png">
+                  </figure>
+                </article>
+              </div>
+  
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title">Project title</p>
+                  <figure class="image">
+                    <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-3-cover.png">
+                  </figure>
+                </article>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
 
-  
+  <!-- members further info to go into module -->
+  <section class="member-more-details">
+    <!-- more about member -->
+    <div class="about-member">
+        <h4>ABOUT</h4>
+        <br>
+        <div class="about-text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar sagittis tortor at tincidunt. 
+                Etiam mattis non massa vel ultricies. Quisque nisl sem, consectetur viverra accumsan ut, mollis at metus. 
+                Sed id tortor ut lacus laoreet mattis. Vestibulum gravida fringilla justo, nec malesuada purus dignissim 
+                at. Duis tempor nibh vel cursus molestie. Sed pretium porttitor gravida. Nam in porta orci. Maecenas 
+                laoreet diam eu eros sollicitudin, molestie ullamcorper enim hendrerit. Praesent et feugiat mi. Integer 
+                at tincidunt lacus. Cras quis porttitor nunc. Mauris quis fermentum lacus, non ullamcorper erat. Morbi 
+                gravida tellus vitae cursus facilisis. Pellentesque pharetra lobortis suscipit. Fusce eget odio orci.
+            </p>
+        </div>
+    </div>
+
+  <!-- project modals -->
+  <div class="projects">
+
+  </div>
+
+  <!-- contact form -->
+
   <!-- contact form below -->
   <div>
     <h4 class="title">Contact Us!</h4>
@@ -374,6 +266,105 @@
         <div id="snackbar">yayyyy sent!</div>
     </form>
   </div>
+
+  <!-- modals for projects/ NOT PEOPLE MODALS  -->
+    <div id="project-1-modal" class="modal">
+      <div class="modal-background"></div>
+        <div class="modal-card">
+  
+          <header class="modal-card-head">
+            <p class="modal-card-title">Project title</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+  
+          <section class="modal-card-body">
+    
+            <div id="project-1-modal-carousel">
+              <figure class="image">
+                <img alt="Project sample" src="img/carousel/1.png">
+              </figure>
+              <figure class="image">
+                <img alt="Project sample" src="img/carousel/2.png">
+              </figure>
+              <figure class="image">
+                <img alt="Project sample" src="img/carousel/3.png">
+              </figure>
+            </div>
+    
+            <div class="content">
+    
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+    
+              <div class="tags">
+                <span class="tag">angular</span>
+                <span class="tag">mongo</span>
+                <span class="tag">typscript</span>
+                <span class="tag">node</span>
+              </div>
+    
+            </div>
+    
+          </section>
+  
+          <footer class="modal-card-foot">
+            <button class="button is-success">Close</button>
+          </footer>
+          
+        </div>
+      </div>
+  
+    <div id="project-2-modal" class="modal">
+        <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Project title</p>
+              <button class="delete" aria-label="close"></button>
+            </header>
+  
+            <section class="modal-card-body">
+      
+              <div id="project-2-modal-carousel">
+                <figure class="image">
+                  <img alt="Project sample" src="img/carousel/1.png">
+                </figure>
+                <figure class="image">
+                  <img alt="Project sample" src="img/carousel/2.png">
+                </figure>
+                <figure class="image">
+                  <img alt="Project sample" src="img/carousel/3.png">
+                </figure>
+              </div>
+      
+              <div class="content">
+      
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat.</p>
+      
+                <div class="tags">
+                  <span class="tag">angular</span>
+                  <span class="tag">mongo</span>
+                  <span class="tag">typscript</span>
+                  <span class="tag">node</span>
+                </div>
+      
+              </div>
+      
+            </section>
+            
+            <footer class="modal-card-foot">
+              <button class="button is-success">Close</button>
+            </footer>
+          </div>
+        </div>
+      
+  
 </body>
 
 </html>

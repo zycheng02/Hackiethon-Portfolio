@@ -33,6 +33,29 @@ a.icon > strong {
     width: 100%
 }
 
+/* member general info specific modals content */
+.member-general-info {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.member-general-info .name-picture {
+  width: 25%;
+  padding: 1rem;
+}
+
+.member-general-info .skill-bars {
+  width: 40%;
+  padding: 1rem;
+}
+
+.member-general-info .hobbies-lifestyle {
+  width: 35%;
+  padding: 1rem;
+}
+
 /*== SKILL BAR ==*/
 .skill {
     margin: 0;

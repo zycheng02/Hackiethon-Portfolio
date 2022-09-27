@@ -2,8 +2,14 @@ h1 {
     text-align: center;
 }
 
-.character{
-    padding: 40px;
+/* screen seperation for sections */
+.jumbotron {
+  height: 100vh; /*height to 100% of view height*/
+  background: #31b0d5; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
 }
 
 body .wrapper {

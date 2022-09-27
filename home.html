@@ -19,8 +19,10 @@
     </h1>
   </header>
 
-
-  <section class="section">
+  <!-- Person selection
+    redirects to introduction down the page
+  -->
+  <section class="jumbotron">
     <div class="container">
       <h2 class="title">CHOOSE YOUR MEMBER</h2>
       <hr>
@@ -33,7 +35,6 @@
               <article class="tile is-child notification">
                 <p class="title">David</p>
                 <figure class="image is-3by2">
-                  
                   <span>
                     <a href="#name1"> <img src="picture.jpg" alt="descriptivetext" /> </a>
                   </span>
@@ -50,11 +51,23 @@
               </article>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+
             <div class="tile is-parent">
+              
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image">
-                  <img alt="Project sample" class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                <p class="title">David</p>
+                <figure class="image is-3by2">
+                  <span>
+                    <a href="#name1"> <img src="picture.jpg" alt="descriptivetext" /> </a>
+                  </span>
                 </figure>
               </article>
             </div>
@@ -63,7 +76,7 @@
               <article class="tile is-child notification">
                 <p class="title">Project title</p>
                 <figure class="image">
-                  <img alt="Project sample" class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                  <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
                 </figure>
               </article>
             </div>
@@ -71,6 +84,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
     
@@ -172,92 +186,14 @@
         </div>
       </div>
     
-    <div id="project-3-modal" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Project title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
 
-          <section class="modal-card-body">
-            <div id="project-3-modal-carousel">
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/1.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/2.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/3.png">
-              </figure>
-            </div>
     
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat.</p>
-              <div class="tags">
-                <span class="tag">angular</span>
-                <span class="tag">mongo</span>
-                <span class="tag">typscript</span>
-                <span class="tag">node</span>
-              </div>
-            </div>
-    
-          </section>
 
-          <footer class="modal-card-foot">
-            <button class="button is-success">Close</button>
-          </footer>
-        </div>
-      </div>
-
-    <div id="project-4-modal" class="modal">
-      <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Project title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-          <section class="modal-card-body">
-            <div id="project-4-modal-carousel">
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/1.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/2.png">
-              </figure>
-              <figure class="image">
-                <img alt="Project sample" src="img/carousel/3.png">
-              </figure>
-            </div>
-    
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat.</p>
-              <div class="tags">
-                <span class="tag">angular</span>
-                <span class="tag">mongo</span>
-                <span class="tag">typscript</span>
-                <span class="tag">node</span>
-              </div>
-            </div>
-          </section>
-
-          <footer class="modal-card-foot">
-            <button class="button is-success">Close</button>
-          </footer>
-        </div>
-      </div>
-    </div>
-    
-    <!-- members general info to go into each modal -->
+  <!-- person 1 anchor -->
+    <div class="jumbotron">
+      <a class="anchor" name="name1"></a>
+      
+          <!-- members general info to go into each modal -->
     <section class="member-general-info">
 
       <!-- NAME AND PICTURE -->
@@ -270,8 +206,10 @@
               <img src="#" alt="member name avatar">
           </div>
       </div>
-
-      <!-- SKILL BAR CODE -->
+      
+      <!-- SKILL BAR CODE 
+      sourced from https://hovahyii.github.io/portfolio-v2/index.html#about
+      -->
       <div class="skill-bars">
         <h4>SKILLS</h4>
           <ul class="list-unstyled list-progress">
@@ -334,12 +272,42 @@
       </div>
   </section>
     
-    <div >
-      <a class="anchor" name="name1"></a>
-        <h1>hello! </h1> 
+
+    <!-- person 1 project -->
+    <section class="section">
+      <div class="container">
+        <h2 class="title">PROJECTS</h2>
+        <hr>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title">Project title</p>
+                  <figure class="image">
+                    <img alt="Project sample" class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                  </figure>
+                </article>
+              </div>
+  
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title">Project title</p>
+                  <figure class="image">
+                    <img alt="Project sample" class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                  </figure>
+                </article>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
 
-  
+    
   <!-- contact form below -->
   <div>
     <h4 class="title">Contact Us!</h4>

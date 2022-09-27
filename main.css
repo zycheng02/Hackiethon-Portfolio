@@ -8,6 +8,31 @@ body .wrapper {
     opacity: 0.0;
     position: relative;
 }
+/* modals */
+.card-gap {
+    margin-top: 1.75rem
+}
+
+.modal-trigger {
+    cursor: pointer
+}
+
+a.icon > strong {
+    margin-left: .25rem
+}
+
+.modal-card-body div.content {
+    margin: 1.75rem 0
+}
+
+.section {
+    padding: 2.15rem 1.5rem
+}
+
+.carousel-cell {
+    width: 100%
+}
+
 /*== SKILL BAR ==*/
 .skill {
     margin: 0;

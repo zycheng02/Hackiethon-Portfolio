@@ -139,16 +139,12 @@ a.icon > strong {
 
 #snackbar {
     visibility: hidden;
-    min-width: 200px;
+    min-width: 50px;
     margin-left: -125px;
     background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: center; 
-    border-radius: 2px; /* could change */
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    border-radius: 1px; /* could change */
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */

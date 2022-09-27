@@ -4,6 +4,9 @@ h1 {
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 /* screen seperation for sections */
+.screenSep{
+  height: 100vh;
+}
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
   background: #31b0d5; /*background color to blue*/

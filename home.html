@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="PLUGINS/bulma.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcf26e182e.js" crossorigin="anonymous"></script>
     <!-- Bootstrap style for skill bar-->
     <link href="PLUGINS/bootstrap.css" rel="stylesheet">
     <!-- Bulma style for modal -->
@@ -16,7 +17,7 @@
 <body>
   <header>
     <h1>
-        <span>WHATEVER WE WANNA CALL IT</span>
+        <span>WINNERS</span>
     </h1>
   </header>
 
@@ -26,7 +27,7 @@
   <a name="index"></a>
   <section class="screenSep">
     <div class="container">
-      <h2 class="title">CHOOSE YOUR MEMBER</h2>
+      <h2 class="title">CHOOSE YOUR HACKIETHORN WINNER:</h2>
       <hr>
       <div class="tile is-ancestor">
         <div class="tile is-vertical">
@@ -46,7 +47,7 @@
               <article class="tile is-child notification">
                 <h3>Piya</h3>
                 <figure class="image">
-                  <a href="#name2"> <img src="" alt="descriptivetext" /> </a>                
+                  <img alt="piyas avatar" class="modal-trigger" data-target="project-2-modal" src="/images/piya-avatar.png">
                 </figure>
               </article>
             </div>
@@ -138,21 +139,16 @@
               </div>
               </li>
             </ul>
+      <!-- HOBBIES AND LIFESTLE -->
+      <div class="hobbies-lifestyle">
+        <div class="hobbies">
+            <h4>HOBBIES</h4>
+            <p>
+                <i class="fa-solid fa-dumbbell"></i> Gym<br>
+                <i class="fas fa-medal"></i> Badminton<br>
+            </p>
         </div>
-
-        <!-- HOBBIES AND LIFESTLE -->
-        <div class="hobbies-lifestyle">
-          <div class="hobbies">
-              <h4>HOBBIES</h4>
-              <p>
-                <ul>
-                  <li>Hobby 1</li>
-                  <li>Hobby 2</li>
-                  <li>Hobby 3</li>
-                </ul>
-              </p>
-          </div>
-
+        
           <br>
           <br>
 
@@ -1088,39 +1084,39 @@
 
       <div class="form-name">
         <div class="first-name">
-          <label class="field is-horizontal">First Name</label>
+          <label class="field">First Name</label>
           <input type="text" name="firstName" placeholder="First Name">
           <br>
         </div>
 
         <div class="last-name">
-          <label class="field is-horizontal">Last Name</label>
+          <label class="field">Last Name</label>
           <input type="text" name="lastName" placeholder="Last Name">
           <br>
         </div>
       </div>
 
       <div class="email">
-        <label class="field is-horizontal">Email</label>
+        <label class="field">Email</label>
         <input class="input" type="text" name="email" placeholder="Email">
         <br>
       </div>
 
       <div class="query">
-        <label class="field is-horizontal">Subject</label>
+        <label class="field">Subject</label>
         <input class="input" type="text" name="subject" placeholder="Subject">
         <br>
 
-        <label class="field is-horizontal">Question</label>
+        <label class="field">Question</label>
         <input class="textarea" type="text" name="message" placeholder="Question">
         <br>
       </div>
 
-      <label class="field is-horizontal">Opt in to join our adventures</small></label>
-      <input class="input" type="checkbox" name="_optin" placeholder="Email"><br>
+      <label class="field">Opt in to join our adventures</small></label>
+      <input class="field" type="checkbox" name="_optin" placeholder="Email"><br>
 
       <!-- Use a button to open the snackbar used this link: https://www.w3schools.com/howto/howto_js_snackbar.asp -->
-      <input type="button" onclick="myFunction()">Send</button>
+      <button type="button" onclick="myFunction()">Send</button>
       <!-- The actual snackbar -->
       <div id="snackbar">yayyyy sent!</div>
     </form>

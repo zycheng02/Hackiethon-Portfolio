@@ -7,10 +7,10 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Press Start 2P';
-    font-size: 2.5rem;
-    color: #000000;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  font-size: 2.5rem;
+  color: #000000;
 }
 
 h2 {
@@ -22,22 +22,33 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: 'Syne'; 
-  font-size: 2rem;
+  font-family: 'Press Start 2P'; 
+  font-size: 1.5rem;
+  color: #000000;
 }
 
 h4 {
   text-align: left; 
   font-family: 'Syne';
-  font-size: 1.5rem; 
+  font-size: 1.75rem; 
 }
 
+h5 {
+  text-align: left; 
+  font-family: 'Syne';
+  font-size: 1.25rem; 
+}
 
+p, a {
+  text-align: left; 
+  font-family: 'Syne'; 
+  font-size: 1.25rem; 
+}
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 /* screen seperation for sections */
 .screenSep{
-
+  min-height: 100vh;
   padding: 2.15rem 1.5rem;
 }
 .jumbotron {

@@ -140,7 +140,10 @@ a.icon > strong {
     width: 0;
   }
 
-
+  .member-more-details .about-member .about-text {
+    column-count: 2; 
+  }
+  
 /* contact form css (note: copied from https://www.w3schools.com/howto/howto_js_snackbar.asp ) */
 
 #snackbar {

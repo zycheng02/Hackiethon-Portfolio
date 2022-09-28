@@ -152,6 +152,12 @@ a.icon > strong {
   padding: 1rem;
 }
 
+ul li {
+  text-align: left; 
+  font-family: 'Syne'; 
+  font-size: 1.25rem;
+}
+
 /*== SKILL BAR ==*/
 .skill {
   margin: 0;

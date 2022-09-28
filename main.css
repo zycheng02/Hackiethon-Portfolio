@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  margin: 2%;
+  margin: 0%;
 }
 
 h1 {
@@ -56,7 +56,8 @@ p, a {
   min-height: 100vh; /*height to 100% of view height*/
   background: #A3D6D4; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
-
+  
+  box-sizing: inherit;
   display: flex;
   flex-direction: column;
 }

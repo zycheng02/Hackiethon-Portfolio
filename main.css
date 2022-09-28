@@ -50,6 +50,7 @@ p, a {
 .screenSep{
   min-height: 100vh;
   padding: 2.15rem 1.5rem;
+  padding-top: 10rem;
 }
 .jumbotron1 {
   min-height: 100vh; /*height to 100% of view height*/

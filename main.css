@@ -50,10 +50,11 @@ p, a {
 .screenSep{
   min-height: 100vh;
   padding: 2.15rem 1.5rem;
+  padding-top: 10rem;
 }
 .jumbotron1 {
   min-height: 100vh; /*height to 100% of view height*/
-  background: #F7F4EA; /*background color to blue*/
+  background: #A3D6D4; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
@@ -61,7 +62,7 @@ p, a {
 }
 .jumbotron2 {
   min-height: 100vh; /*height to 100% of view height*/
-  background: #DED9E2; /*background color to blue*/
+  background: #B0ABCA; /*background color to purple*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
@@ -69,7 +70,7 @@ p, a {
 }
 .jumbotron3 {
   min-height: 100vh; /*height to 100% of view height*/
-  background: #C0B9DD; /*background color to blue*/
+  background: #F1E9CB; /*background color to yellow*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
@@ -77,7 +78,7 @@ p, a {
 }
 .jumbotron4 {
   min-height: 100vh; /*height to 100% of view height*/
-  background: #80A1D4; /*background color to blue*/
+  background: #C2D5A7; /*background color to green*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
